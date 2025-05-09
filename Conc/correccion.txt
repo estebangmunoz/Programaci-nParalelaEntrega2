@@ -1,0 +1,38 @@
+Cambiar nombre de fuciones al guardar el csv.  Hecho
+
+Quitar dos bucles de pso.   (Paralelizar?)
+
+Actualizar velocidad, y actualizar particula en clase particula      ??? (Chati dice que no)
+
+Validate parameters sobra. Hecho
+
+Añadir dimensiones.  Hecho
+
+Limpiar código.
+
+Valores e-309 imposibles.
+    Solución de chati:
+    1. Implementa _validate_parameters para validar los parámetros de entrada. (Función borrada)
+    2. Asegúrate de que las partículas no se salgan de los límites (bounds) en ningún momento.
+    3. Normaliza las posiciones y velocidades si es necesario.
+    4. Valida los valores antes de actualizarlos en pBest y gBest.
+    5. Agrega controles explícitos para evitar valores extremos en las evaluaciones de las funciones objetivo.
+
+Tiempos.  Hecho (Tiempos de iteración)
+
+En notebook mostrar convergencia.
+
+PARA ENTREGA 2:
+    - Hacer por hilos y por procesos y comparar (Con pyswarm? Con Entrega1?)
+    - Broad.. matrícula (Supuestamente)
+
+
+VERSIONES A HACER:
+    - hilos
+    - procesos
+    - asíncrona
+    - combinando
+
+    Usar semillas (Donde corresponda)
+
+    En vez de csv se puede guardar en parquet.

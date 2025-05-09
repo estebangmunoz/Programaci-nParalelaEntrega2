@@ -1,0 +1,19 @@
+CAMBIOS REALIZADOS EN EL CÓDIGO PARA PARALELIZAR CON HILOS
+----------------------------------------------------------
+
+pso.py
+----------
+- Importar librerías
+- Cambiar bucle de evaluación de partículas por pool de hilos
+- Borrar la función _update_velocity
+
+
+partcile.py
+-----------
+- Crear función update_velocity_and_position
+
+
+
+parametria.py
+--------------
+- Paralelizamos dentro de execute_pso()

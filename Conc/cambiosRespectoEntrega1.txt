@@ -1,0 +1,31 @@
+CAMBIOS EN LA SEGUNDA ENTREGA RESPECTO A LA PRIMERA
+---------------------------------------------------
+
+    parametria.py
+    ----------------
+    1. Las funciones se guardan con su nombre y no con su posición de memoria.
+    2. Añadimos al desempaquetamiento "dim" para extraer la dimensión.
+    3. Nueva variable "current_bounds" que selecciona los límites de cada dimensión.
+        - Usamos "current_bounds" al ejecutar PSO.
+    4. Añadimos "dim" a la lista que se agrega a "results".
+    5. Añadimos "dimensions" como columna de "df".
+    6. "execute_PSO" recibe "dimensions" como argumento.
+    7. Añadimos cálculo de tiempo de cada iteración.
+
+
+    pso.py
+    ----------------
+    1. Eliminamos función "_validate_parameters()".
+    2. Eliminamos cálculo de tiempo de cada partícula.
+
+    Intento: Cambio de gBest(lista) por valor que se actualiza  NO FUNCIONA8
+
+    particle.py
+    ----------------
+    1. En "self.position" pasamos como tercer argumento "len(bounds[0])"
+
+    run.py
+    ----------------
+    1. Introducimos el número de dimensiones como parámetro:
+        - Nuevo array "dimensions".
+        - Nueva lista "bounds" que calcula los límites de manera dinámica para cada dimensión.

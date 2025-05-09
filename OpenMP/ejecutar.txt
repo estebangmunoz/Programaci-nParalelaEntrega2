@@ -1,0 +1,5 @@
+Líneas para ejecutar la versión de OpenMP: 
+
+cd C:\Users\esteb\Desktop\CUNEF\2024-2025\Segundo cuatri\Programación Paralela\Entrega2\Procesos\src
+cl /openmp /O2 pso_openmp.c
+pso_openmp.exe
